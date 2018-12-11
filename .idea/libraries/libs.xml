@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="libs">
+    <ANNOTATIONS>
+      <root url="jar://D:/selenium-java-3.141.59.zip!/libs" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://D:/selenium-java-3.141.59.zip!/libs" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/selenium-java-3.141.59.zip!/libs" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="jar://D:/selenium-java-3.141.59.zip!/libs" />
+    </NATIVE>
+    <SOURCES>
+      <root url="jar://D:/selenium-java-3.141.59.zip!/libs" />
+    </SOURCES>
+    <jarDirectory url="jar://D:/selenium-java-3.141.59.zip!/libs" recursive="false" />
+    <jarDirectory url="jar://D:/selenium-java-3.141.59.zip!/libs" recursive="false" type="SOURCES" />
+  </library>
+</component>
