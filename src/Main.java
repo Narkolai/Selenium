@@ -15,9 +15,9 @@ public class Main {
         System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
 
         String myLink, username, password;
-        myLink = "http://localhost:38083/issues";
-        username = "";
-        password = "";
+        myLink = UserList.getUsrInf()[0];
+        username = UserList.getUsrInf()[1];
+        password = UserList.getUsrInf()[2];
 
         WebDriver  driver = new ChromeDriver();
         WebDriverWait wait = new WebDriverWait(driver, 4000);
