@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Main {
     //ToDO Реализоавть через XPath
+    //ToDo New Branch https://github.com/Nartkolai/Selenium/tree/PageObject
 
     public static void main(String[] args) {
 
