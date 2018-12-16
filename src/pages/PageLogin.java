@@ -1,25 +1,28 @@
+package pages;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
-    public LoginPage(WebDriver driver) {
+public class PageLogin {
+    public PageLogin(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
     public WebDriver driver;
 
-    @FindBy(id = "login")
+    @FindBy(id = "username"/*"login"*/)
     private WebElement loginField;
 
     @FindBy(id = "password")
     private WebElement passwordField;
 
-    @FindBy(xpath = "//button[text()='Войти']")
+   // @FindBy(xpath = "//button[text()='Войти']")
+    @FindBy(xpath = "//button[@class='ring-button ring-button_blue auth-button auth-button_wide' and @data-test='login-button']")
     private WebElement loginButton;
 
-    void inputLogin(String login) {
+    public void inputLogin(String login) {
         loginField.sendKeys(login);
     }
 
@@ -29,9 +32,5 @@ public class LoginPage {
 
     public void clickLoginButton() {
         loginButton.click();
-    }
-
-    public void setPasswordField(WebElement passwordField) {
-        this.passwordField = passwordField;
     }
 }
