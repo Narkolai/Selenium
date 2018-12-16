@@ -12,14 +12,13 @@ public class PageLogin {
     }
     public WebDriver driver;
 
-    @FindBy(id = "username"/*"login"*/)
+    @FindBy(id = "username")
     private WebElement loginField;
 
     @FindBy(id = "password")
     private WebElement passwordField;
 
-   // @FindBy(xpath = "//button[text()='Войти']")
-    @FindBy(xpath = "//button[@class='ring-button ring-button_blue auth-button auth-button_wide' and @data-test='login-button']")
+    @FindBy(xpath = "//button[@data-test='login-button']")
     private WebElement loginButton;
 
     public void inputLogin(String login) {
